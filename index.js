@@ -1,16 +1,8 @@
 const fs = require("fs");
 const express = require("express");
+const markdownIt = require("markdown-it")();
 
-// do markuppy stuff
-const commonmark = require("commonmark");
-const reader = new commonmark.Parser();
-const writer = new commonmark.HtmlRenderer();
-
-// turns md string into html string
-function md2html(md) {
-  return writer.render(reader.parse(md));
-}
-
+// setup the server
 const app = express();
 
 app.get("/:filename", (req, res) => {
@@ -36,7 +28,7 @@ app.get("/:filename", (req, res) => {
     // we got the file content, let's try to transform it into html
     let html;
     try {
-      html = md2html(md);
+      html = markdownIt.render(md);
     } catch (e) {
       // failed to transform the md to html: 500
       console.log("md: " + md);

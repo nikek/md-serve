@@ -9,7 +9,7 @@
   "author": "nikek",
   "license": "MIT",
   "dependencies": {
-    "commonmark": "^0.28.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "markdown-it": "^8.4.2"
   }
 }
