@@ -1,0 +1,15 @@
+{
+  "name": "md-server",
+  "version": "1.0.0",
+  "description": "Serve docs generated on-demand from markdown",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "nikek",
+  "license": "MIT",
+  "dependencies": {
+    "commonmark": "^0.28.1",
+    "express": "^4.16.4"
+  }
+}
