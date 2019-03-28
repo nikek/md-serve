@@ -1,6 +1,8 @@
 const fs = require("fs");
 const express = require("express");
-const markdownIt = require("markdown-it")();
+const markdownIt = require("markdown-it")({ html: true }).use(
+  require("markdown-it-admonition")
+);
 
 // setup the server
 const app = express();
