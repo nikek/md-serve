@@ -9,3 +9,4 @@ List of featues and extensions:
 - commonmark
 - admonition
 - footnote
+- toc and header anchor

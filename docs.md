@@ -1,3 +1,5 @@
+@[toc]
+
 # Hello
 
 This is _awesome_!

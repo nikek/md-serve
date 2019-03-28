@@ -2,7 +2,8 @@ const fs = require("fs");
 const express = require("express");
 const markdownIt = require("markdown-it")({ html: true })
   .use(require("markdown-it-admonition"))
-  .use(require("markdown-it-footnote"));
+  .use(require("markdown-it-footnote"))
+  .use(require("markdown-it-toc-and-anchor").default);
 
 // setup the server
 const app = express();
