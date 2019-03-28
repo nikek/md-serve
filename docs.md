@@ -2,13 +2,15 @@
 
 This is _awesome_!
 
-- oatly
+- oatly[^1]
 - oumph
-- vialife
+- violife
 
 > Värsta citatet
 
-Sen skriver du den här kodsnutten:
+## Another header
+
+And then you write this piece of code:
 
 ```
 const variabel = 3;
@@ -16,3 +18,5 @@ const variabel = 3;
 
 !!! note
 something to take with you
+
+[^1]: Best oat drink brand
